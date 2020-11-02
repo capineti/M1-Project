@@ -46,10 +46,10 @@ class Signup {
 
     //create the new user
     const newUser = new newUser(name, email, password);
-    console.log("newUser",newUser);
+  
     //Save the user in the database
+    db.saveNewUser(newUser;)
 
-    
 
     //empty the form
 
@@ -61,10 +61,7 @@ class Signup {
   addEventListener = () => {
     this.emailInput.addEventListener("input", this.handleEmailInput);
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
-    this.repeatPasswordInput.addEventListener(
-      "input",
-      this.repeatPasswordInput
-    );
+    this.repeatPasswordInput.addEventListener( "input",this.handleRepeatPasswordInput);
 
     this.buttonInput.addEventListener("click", this.saveData);
   };
