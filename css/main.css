@@ -1,9 +1,20 @@
 @font-face {
-  font-family: "Futura Condensed";
+  font-family: "Futura-Condensed";
   src: url(./fonts/Futura\ Condensed\ Regular.ttf);
+
+  src: url(./fonts/Futura\ Condensed\ Bold.otf);
 }
-/*@import url("https://fonts.googleapis.com/css?family=Poppins");*/
 
 body {
-  font-family: "Poppins";
+  font-family: Futura-Condensed;
+}
+p {
+  font-family: Futura-Condensed;
+}
+#firstImage {
+  background-color: black;
+}
+.headerImg1{
+width: auto;
+height: 700px;
 }
