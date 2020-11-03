@@ -9,28 +9,61 @@ class Signup {
     this.repeatPasswordInput = document.querySelector("#repeat-password");
 
     this.buttonInput = document.querySelector("#signup-button");
-    this.errorWraper = document.querySelector(
-      ".message-container"
-    ); /* Why we use a class instead of an id?*/
+    this.errorsWrapper = document.querySelector(".message-container");
   }
 
-  //handle the email input
   handleEmailInput = (event) => {
     const emailInput = event.target;
     const email = emailInput.value;
+    // console.log (email);
+
+    validator.validateValidEmail(email);
+    validator.validateUniqueEmail(email);
+
+    this.setErrorMessages();
   };
 
   //handle the password input
   handlePasswordInput = (event) => {
     const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
+
     const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
+
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPasswordInput); //cambio
+    this.setErrorMessages();
   };
 
   //handle the repeat-password input
   //password confirmation
   handleRepeatPasswordInput = (event) => {
-    const repeatPasswordInput = event.target;
-    const repeatPasword = repeatPasswordInput.value;
+    const passwordInput = event.target;
+    const repeatPasswordInput = this.repeatPasswordInput;
+    const password = passwordInput.value;
+    const repeatPassword = repeatPasswordInput.value;
+
+    validator.validatePassword(password);
+    validator.validateRepeatPassword(password, repeatPassword);
+
+    this.setErrorMessages();
+  };
+
+  //used to show messages below the signup form
+  setErrorMessages = () => {
+    this.errorsWrapper.innerHTML = "";
+
+    const errorsObj = validator.getErrors();
+
+    const errorStringsArr = Object.values(errorsObj);
+
+    errorStringsArr.forEach((str) => {
+      const p = document.createElement("p");
+      p.textContent = str;
+
+      this.errorsWrapper.appendChild(p);
+    });
   };
 
   //handle the sending of the data (on submit)
@@ -45,12 +78,11 @@ class Signup {
     const password = this.passwordInput.value;
 
     //create the new user
-    const newUser = new newUser(name, email, password);
-  
+    const newUser = new User(name, email, password);
+
     //Save the user in the database
-    db.saveNewUser(newUser;)
-
-
+    db.saveNewUser(newUser);
+    this.reDirectToLogin();
     //empty the form
 
     this.nameInput.value = "";
@@ -58,16 +90,23 @@ class Signup {
     this.passwordInput.value = "";
   };
 
-  addEventListener = () => {
+  addListener = () => {
     this.emailInput.addEventListener("input", this.handleEmailInput);
     this.passwordInput.addEventListener("input", this.handlePasswordInput);
-    this.repeatPasswordInput.addEventListener( "input",this.handleRepeatPasswordInput);
+    this.repeatPasswordInput.addEventListener(
+      "input",
+      this.handleRepeatPasswordInput
+    );
 
     this.buttonInput.addEventListener("click", this.saveData);
   };
+
+  reDirectToLogin = () => {
+    location.assign("login.html");
+  };//go to the login 
 }
 //create an instance of th Signup (object)
 const signup = new Signup();
 
 //Add event listener once the page and all the resources are loaded
-window.addEventListener("load", signup.addEventListener);
+window.addEventListener("load", signup.addListener);
