@@ -105,9 +105,9 @@ input:focus {
   background-color: #ad2d2a;
 }
 
-.signup {
-  font-size: 25px;
-  color: rgb(114, 113, 113);
+.Signup {
+  font-size: 60px;
+  color: #ef3e3a;
 }
 .text {
   position: absolute;
