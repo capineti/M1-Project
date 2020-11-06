@@ -102,7 +102,7 @@ class Signup {
   };
 
   reDirectToLogin = () => {
-    location.assign("login.html");
+    location.assign("index.html");
   };//go to the login 
 }
 //create an instance of th Signup (object)

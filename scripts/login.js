@@ -42,7 +42,7 @@ class Login {
     this.messageContainer.appendChild(p);
   };
   redirect = () => {
-    location.assign("index.html");
+    location.assign("dashboard.html");
   };
 }
 const login = new Login();
