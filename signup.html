@@ -1,29 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="./css/signup.css" />
+    
+    <title>SignUp</title>
+  </head>
   <body>
-    <section class="Signup">
-      <h2>Sign Up</h2>
-      <div class="form-wrapper">
-        <form class="signup-form" action="">
-          <input type="text" id="name" placeholder="Name" /><br /><br />
-          <input type="email" id="email" placeholder="Email" /><br /><br />
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-          /><br /><br />
-          <input
-            type="password"
-            id="repeat-password"
-            placeholder="Repeat Password"
-          />
-
-          <button type="submit" class="button" id="signup-button">
-            Sign Up
-          </button>
-        </form>
-        <div class="message-container"></div>
+    <div class="flexbox-container">
+      <div class="flex-Item1"> 
+        <div class="Signup" >Sign Up</div>
+        
+          <form class="signup-form" action="">
+            <input type="text" id="name" placeholder="Name" /><br />
+            <input type="email" id="email" placeholder="Email" /><br />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+            /><br />
+            <input
+              type="password"
+              id="repeat-password"
+              placeholder="Repeat Password"
+            />
+  
+            <button type="submit" class="button" id="signup-button">
+              Sign Up
+            </button>
+          </form>
+          <div class="message-container"></div>
+        
       </div>
-    </section>
+      <div class="flex-Item2"></div>
+      
+   
 
     <script src="./scripts/signup.js"></script>
     <script src="./scripts/user.js"></script>

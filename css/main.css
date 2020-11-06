@@ -1,20 +1,399 @@
 @font-face {
   font-family: "Futura-Condensed";
   src: url(./fonts/Futura\ Condensed\ Regular.ttf);
-
+}
+@font-face {
+  font-family: "Futura-Condensed";
   src: url(./fonts/Futura\ Condensed\ Bold.otf);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Futura-Condensed;
+
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
 }
-p {
+/*HEADING ELEMENTS------------------------*/
+h1,
+h2,
+h3 {
+  font-family: "futura";
+}
+
+h1 {
+  font-size: 6.3em;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+}
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-block-start: 12%;
+}
+h4 {
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #aaa274;
+  /* margin-block-start:10%; */
+}
+h5 {
+  font-size: 2.3em;
+  text-align: justify;
+  line-height: 1.2em;
+  color: #aaa274;
+}
+
+/*-----------------------------------------*/
+#sneackers {
+  margin: 20px;
+}
+.logo-jordan {
+  height: 40px;
+  margin: 6px 0 10px 0;
+}
+.logo {
+  height: 30px;
+  margin: 12px 10px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  border: 0;
+  background-color: white;
+  list-style: none;
+}
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+}
+.nav-bar-ul {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  margin: 15px 0px;
+}
+.nav-bar-ul li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 30px;
+}
+
+H1 {
   font-family: Futura-Condensed;
+  position: relative;
+  color: white;
+  top: 32%;
+  left: 0.9%;
+  text-shadow: rgb(7, 7, 7) 50px 40px 5px;
 }
-#firstImage {
-  background-color: black;
+h6 {
+  font-size: 6.3em;
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+  color: #ef3e3a;
+  
 }
-.headerImg1{
-width: auto;
-height: 700px;
+
+#aboveHeader {
+  width: auto;
+  height: 4px;
+
+  background-color: #ef3e3a;
 }
+#frontImages {
+  position: relative;
+  margin-top: -42px;
+  background: rgb(0, 0, 0);
+  width: auto;
+  height: 900px;
+
+  box-shadow: 1px 1px 20px #888888;
+  z-index: 3;
+}
+
+.headerImg1 {
+  position: absolute;
+
+  width: 850px;
+  top: 50px;
+  left: 12%;
+}
+.brooklyn {
+  font-size: 2.83rem;
+
+  color: white;
+}
+.amazingJordan {
+  font-size: 2.83rem;
+
+  color: black;
+}
+.tinker {
+  font-size: 2.83rem;
+
+  color: #aaa274;
+}
+.headerImg2 {
+  position: absolute;
+  width: 700px;
+  top: 0px;
+
+  left: 43%;
+}
+.headerLogo {
+  position: absolute;
+  width: 70px;
+  top: 230px;
+
+  left: 49%;
+}
+
+.section1 {
+  position: relative;
+  width: auto;
+  height: 400px;
+  background-color: #ef3e3a;
+
+  box-shadow: 0px 8px 15px #888888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.text {
+  margin-top: 0%;
+  padding-top: 0%;
+  width: 1000px;
+  height: 500px;
+
+  color: #aaa274;
+}
+#yearsSneackers {
+  height: auto;
+  background-color: #fbfbfb;
+
+  display: flex;
+  flex-direction: column;
+}
+.year-container {
+  border: solid 1px;
+  color: lightgrey;
+  margin-top: 0px;
+  height: 250px;
+  align-items: center;
+}
+
+.imageYear {
+  position: relative;
+  top: -25px;
+  width: 100vw;
+  height: 252px;
+  background-image: url(/images/circle.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+.text1985 {
+  margin: 25px 210px;
+  font-size: 40px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.number1 {
+  position: relative;
+  top: -275px;
+
+  font-size: 7em;
+  text-align: center;
+}
+
+.bottomButton {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.arrow {
+  position: fixed;
+
+  bottom: 20px;
+  margin: auto;
+
+  
+  
+  border-right: 20px solid transparent;
+  border-top: 30px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 30px solid #ef3e3a;
+}
+
+/* dropdown section in year container*/
+.open {
+  width: 100vw;
+  border: none;
+}
+.closed {
+  /* height: 0px; */
+  border: none;
+  display: none;
+}
+.dropdown-section {
+  z-index: 1;
+  position: relative;
+  top: -255px;
+  overflow-y: scroll;
+  width: 100vw;
+  box-sizing: border-box;
+  border-bottom: solid #ef3e3a 2px;
+  background-color: white;
+  height: auto;
+}
+/* The history*/
+
+.the-history {
+  
+  width: auto;
+  height: 2950px;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.element1 {
+ 
+  
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+  
+}
+.imgFlex{
+  width: 800px;
+  margin:50px 100px;
+  
+ 
+}
+.imgFlex2{
+  width: 800px;
+  margin:350px 50px;
+  
+ 
+}
+
+.element2 {
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+ 
+}
+
+.element3 {
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+  
+}
+
+.element4 {
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+  
+}
+.element5 {
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+  
+}
+.element6 {
+  width: 930px;
+  height: 950px;
+  background:#ef3e3a ;
+  
+}
+.Sign {
+  width: 600px;
+  margin: 160px;
+}
+
+/* footer */
+
+.footerImage {
+  /* position: absolute; */
+  height: 700px;
+  background-repeat: no-repeat;
+
+  background-image: url("/images/footerImg.JPG");
+}
+
+.buttonHistory {
+  margin: 500px 10px;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 18%;
+  -webkit-border-radius: 18%;
+  border-radius: 50%;
+  background: white;
+ 
+}
+
+/*GOLD HEART*/
+/* .goldheart {
+  background-color: #aaa274;
+  display: inline-block;
+  height: 20px;
+  margin: 130px 85%;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+.goldheart:before,
+.goldheart:after {
+  content: "";
+  background-color:#aaa274 ;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.goldheart:before {
+  top: -10px;
+  left: 0;
+}
+
+.goldheart:after {
+  left: 10px;
+  top: 0;
+}
+
+
+.heart:after {
+  left: 10px;
+  top: 0;
+} */

@@ -1,5 +1,5 @@
 "use strict";
-
+const sneackers = document.querySelector("#sneackers")
 fetch("https://nike-jordan.herokuapp.com/jordans")
   .then((response) => {
     console.log("response", response);
@@ -16,10 +16,12 @@ fetch("https://nike-jordan.herokuapp.com/jordans")
         !obj.media.imageUrl.includes("Placeholder") &&
         obj.shoe.includes("Jordan") //to get the file only is there is an image and if this image is a Nike Jordan one
       ) {
+        
+      
         newImg.setAttribute("src", obj.media.imageUrl);
         newImg.style.width = "200px";
-        document.body.appendChild(newImg);
-      }
+        sneackers.appendChild(newImg);
+     }
     });
   })
   .catch((error) => {

@@ -24,3 +24,6 @@ https://trello.com/invite/b/2FcLSz11/d39a4046def4ba6a451e59dc95470dac/project-ma
 
 Github
 https://github.com/capineti/01-m1-project-structure.git
+
+Presentation
+https://docs.google.com/presentation/d/1e_ErwBJElbDERoK1NEwKfu_l6hytlfVvLz0VynFyxj0/edit?usp=sharing
