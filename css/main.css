@@ -106,7 +106,6 @@ h6 {
   display: inline-block;
   width: 100%;
   color: #ef3e3a;
-  
 }
 
 #aboveHeader {
@@ -204,7 +203,7 @@ h6 {
   top: -25px;
   width: 100vw;
   height: 252px;
-  background-image: url(images/circle.png);
+  background-image: url(./../images/circle.png);
   background-repeat: no-repeat;
   background-size: 300px;
 }
@@ -238,8 +237,6 @@ h6 {
   bottom: 20px;
   margin: auto;
 
-  
-  
   border-right: 20px solid transparent;
   border-top: 30px solid transparent;
   border-left: 20px solid transparent;
@@ -270,7 +267,6 @@ h6 {
 /* The history*/
 
 .the-history {
-  
   width: auto;
   height: 2950px;
 
@@ -283,57 +279,45 @@ h6 {
 }
 
 .element1 {
- 
-  
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
-  
+  background: #ef3e3a;
 }
-.imgFlex{
+.imgFlex {
   width: 800px;
-  margin:50px 100px;
-  
- 
+  margin: 50px 100px;
 }
-.imgFlex2{
+.imgFlex2 {
   width: 800px;
-  margin:350px 50px;
-  
- 
+  margin: 350px 50px;
 }
 
 .element2 {
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
- 
+  background: #ef3e3a;
 }
 
 .element3 {
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
-  
+  background: #ef3e3a;
 }
 
 .element4 {
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
-  
+  background: #ef3e3a;
 }
 .element5 {
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
-  
+  background: #ef3e3a;
 }
 .element6 {
   width: 930px;
   height: 950px;
-  background:#ef3e3a ;
-  
+  background: #ef3e3a;
 }
 .Sign {
   width: 600px;
@@ -347,7 +331,7 @@ h6 {
   height: 700px;
   background-repeat: no-repeat;
 
-  background-image: url(images/footerImg.JPG);
+  background-image: url(./../images/footerImg.JPG);
 }
 
 .buttonHistory {
@@ -358,7 +342,6 @@ h6 {
   -webkit-border-radius: 18%;
   border-radius: 50%;
   background: white;
- 
 }
 
 /*GOLD HEART*/

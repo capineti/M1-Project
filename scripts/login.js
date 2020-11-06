@@ -18,6 +18,7 @@ class Login {
 
     //get the values from the db
     const users = db.getAllUser();
+    console.log(users);
 
     //Check the password and the email exits in the db
     const user = users.find(function (userObj) {
