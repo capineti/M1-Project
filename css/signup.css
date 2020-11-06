@@ -14,7 +14,7 @@ body {
 .flexbox-container {
   display: flex;
   height: 950px;
-  background-color: grey;
+
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -28,18 +28,15 @@ body {
   font-size: 50px;
 }
 .flex-Item2 {
-  background-color: rgba(241, 73, 73, 0.993);
   width: 900px;
-  margin: 10px, 10px, 10px, 0;
+  margin: 10px, 0px, 10px, 0;
   height: 950px;
-  text-align: center;
-  line-height: 100px;
-  font-size: 50px;
+
   flex: 1;
 }
 
-.imgLogin {
-  width: 100%;
+.signupimg {
+  width: 1000px;
 }
 * {
   box-sizing: border-box;
@@ -111,4 +108,11 @@ input:focus {
 .signup {
   font-size: 25px;
   color: rgb(114, 113, 113);
+}
+.text {
+  position: absolute;
+
+  color: #f02d29;
+  margin: 350px 120px;
+  font-size: 100px;
 }
