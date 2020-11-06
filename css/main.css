@@ -204,7 +204,7 @@ h6 {
   top: -25px;
   width: 100vw;
   height: 252px;
-  background-image: url(/images/circle.png);
+  background-image: url(images/circle.png);
   background-repeat: no-repeat;
   background-size: 300px;
 }
@@ -347,7 +347,7 @@ h6 {
   height: 700px;
   background-repeat: no-repeat;
 
-  background-image: url("/images/footerImg.JPG");
+  background-image: url(images/footerImg.JPG);
 }
 
 .buttonHistory {
